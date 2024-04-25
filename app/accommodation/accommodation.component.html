@@ -1,0 +1,27 @@
+ 
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <ng-container *ngFor="let p of product">
+            <div class="card d-inline-block" style="width: 18rem; margin: 10px;" >
+                <div class="card-header">
+                    <img [src]="p.productImage"  height="200" width="100" alt="" class="card-img-top">
+                </div>
+                <div class="card-boby">
+                 
+                    <h4 class="card-title">
+                        {{ p.productName }}
+                    </h4>
+                    <p class="card-text">location: {{ p.productLocation }}</p>
+                    <p class="card-text">type: {{ p.productType }}</p>
+                    <p class="card-text">price: {{ p.productPrice }}</p>
+                    <p class="card-text">rating: {{ p.productRating }}</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary" type="button" (click)="bookForm()">Book Now</button>
+                    <button class="btn btn-danger">Cancel</button>
+               
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

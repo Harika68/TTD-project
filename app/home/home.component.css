@@ -1,0 +1,11 @@
+.img1{
+   height: 300px;
+   width:400px;
+}
+@media only screen and (min-width:700px) {
+    .img1{
+        width:1500px;
+        height:800px;
+    }  
+    
+}     

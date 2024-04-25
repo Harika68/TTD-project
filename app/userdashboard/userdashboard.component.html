@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-md bg-bhaskar">
+    <div class="container-fluid d-flex justify-content-center" style="margin-top:-50px;">
+    <div class="row">
+        
+        <a class="navbar-brand" href="#">{{username|uppercase}}s Dashboard
+                    <br>
+                     
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="sidebar">
+                    <img src="https://1.bp.blogspot.com/-6fQ1OuTiSeY/YRKhdEVUW7I/AAAAAAAAegI/8O1iFd4NDFkGivFy9Fs5U3AOs1434aRtwCLcBGAsYHQ/s1197/Logo2.jpg" alt=""height="70"width="70" style="border-radius:40px; ;" >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/user/home">Dasboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/user/aboutttd">AboutTTD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/user/booking">Booking services</a>
+                        </li>
+                       
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Booking accommodations</a>
+                            <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a routerLink="/user/success">Success</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            
+   
+         
+    </div>
+ </div>
+</nav>
+<router-outlet></router-outlet>
+
+
